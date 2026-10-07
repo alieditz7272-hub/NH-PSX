@@ -11,16 +11,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Remove all ZIP files
+      - name: Delete all ZIP files
         run: |
-          find . -type f -iname "*.zip" -not -path "./.git/*" -delete
+          # Delete tracked ZIP files
+          git ls-files -z | grep -z -Ei '\.zip$' | xargs -0 -r git rm -f
 
-      - name: Commit and push cleanup
+          # Delete any untracked ZIP files too
+          find . -type f -iname "*.zip" \
+            -not -path "./.git/*" \
+            -delete
+
+      - name: Commit cleanup
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -30,6 +36,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No ZIP files found."
           else
-            git commit -m "Remove old ZIP files"
+            git commit -m "Remove all old ZIP files"
             git push
           fi
