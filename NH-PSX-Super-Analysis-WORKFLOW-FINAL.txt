@@ -1,0 +1,161 @@
+NH PSX SUPER ANALYSIS — FINAL WORKFLOW
+Version: Final Locked Workflow
+
+1. PROJECT
+- Fresh PWA: NH PSX Super Analysis
+- Developed by Nadeem Hassan
+- Mobile-first, bright, clean, compact and professional
+- Fully responsive on mobile, tablet and desktop
+- No horizontal scrolling
+
+2. HEADER
+- NH-PSX
+- Super Analysis
+- Developed by Nadeem Hassan
+- WhatsApp: 03009412177
+- Pakistan clock
+- Market Open/Closed status
+- Data update time
+- Top-right: ONLY dark/light theme toggle
+- No hamburger menu
+- No 4-square/app menu
+
+3. SEARCH
+- Search by PSX symbol
+- Search by full company name
+- Show selected company and sector
+- Compact stock/company quick-selection chips
+
+4. QUOTE
+- Open
+- High
+- Low
+- Close
+- Previous Day Close
+- Up/Down amount and percentage
+- Market status
+
+5. VERDICT
+Only three verdicts:
+- BUY
+- SELL
+- NO TRADE
+
+Colours everywhere relevant:
+- BUY = Green
+- SELL = Red
+- NO TRADE = Orange
+
+Verdict messages:
+- BUY: "Trend is Up • Pullback can be a buying opportunity."
+- SELL: "Trend is Down • Bounce Back is a Sell Opportunity."
+- NO TRADE: "Wait Please • No Clear Direction."
+
+6. TIMEFRAMES
+- 5 Minutes
+- 15 Minutes
+- 30 Minutes
+- 1 Hour
+- 4 Hour
+- Daily
+- Weekly
+- Monthly
+
+Selected timeframe must update the analysis and chart.
+
+7. EMA
+Display:
+- EMA 9 = Green
+- EMA 20 = Red
+- EMA 50 = White
+- EMA 100 = Sky Blue
+- EMA 200 = Orange
+
+8. PIVOT POINTS
+Display:
+- P
+- S1
+- S2
+- R1
+- R2
+
+9. CHART
+- Compact candlestick chart
+- Selected timeframe
+- Volume
+- EMA 9/20/50/100/200 overlays
+- Mobile-friendly sizing
+- No horizontal page scrolling
+
+10. VOLUME
+Compare current volume with 22-session average:
+- Above average = Green up arrow
+- Below average = Red down arrow
+- Around average = Yellow "--"
+
+11. INDICATOR SUMMARY
+Show useful verdict/status cards for:
+- Intraday
+- Short Term
+- Swing
+- RSI
+- MACD
+- Volume
+
+Signal colours must remain consistent:
+BUY green / SELL red / NO TRADE orange.
+
+12. UI RULE
+Interface must remain simple.
+Do NOT show:
+- Source names
+- API names
+- Backend details
+- Calculation formulas
+- Technical settings
+- Developer/debug information
+- Internal data-processing details
+
+13. PWA
+- Installable PWA
+- Manifest
+- Service worker
+- App icon
+- Offline shell/cache where practical
+- GitHub Pages compatible
+- No Netlify dependency
+- No Firebase dependency
+- No Gemini dependency
+
+14. DATA / ENGINE
+- Use available PSX-compatible market data feeds
+- Calculate indicators reliably
+- Refresh data automatically
+- Handle unavailable data gracefully
+- Never display fake/random market data
+
+15. FINAL QUALITY CHECK
+Before final ZIP:
+- Test all files
+- Validate HTML/CSS/JS
+- Validate manifest
+- Validate service worker
+- Verify all requested UI elements
+- Verify BUY/SELL/NO TRADE colours
+- Verify all three verdict messages
+- Verify EMA colours
+- Verify Pivot Points
+- Verify all timeframes
+- Verify responsive/mobile layout
+- Verify no unwanted menu icons
+- Verify no source names in UI
+- Verify ZIP integrity
+
+16. ADMIN
+- NO Admin section
+- NO login system
+- NO username/password requirement
+- NO server-side user database
+
+FINAL RULE:
+This workflow is the locked specification. Any future ZIP must follow this workflow unless the user explicitly changes a requirement.
